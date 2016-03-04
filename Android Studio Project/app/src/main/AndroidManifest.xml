@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arturgoms.spectro">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logowhite"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PopNew"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopOpen"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".TerminalPage"
+            android:label="@string/menuTerminal"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".bluetoothchat.DeviceListActivity"
+            android:label="@string/menuTerminal"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".bluetoothchat.BluetoothChat"
+            android:label="@string/menuTerminal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConfigPage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Webview1"
+            android:label="GitHub" />
+        <activity
+            android:name=".Webview2"
+            android:label="Twitter" />
+        <activity
+            android:name=".Webview3"
+            android:label="Facebook" />
+        <activity
+            android:name=".bluetoothchat.BluetoothChatBar"
+            android:label="@string/menuTerminal" />
+        <activity
+            android:name=".NoteMain"
+            android:label="@string/menuEditor" />
+        <activity
+            android:name=".ActivityEdit"
+            android:label="@string/menuEditor" />
+        <activity
+            android:name=".project.MainProject"
+            android:label="@string/menuProject" />
+        <activity
+            android:name=".project.ActivityProjectEdit"
+            android:label="@string/menuProject" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+    </application>
+
+</manifest>
