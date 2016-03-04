@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Basics -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Spectro</string>
+    <string name="user_name">Artur Gomes</string>
+    <string name="user_email">arturgomesomatos@gmail.com</string>
+    <!-- Menu -->
+    <string name="menuWelcome">Welcome</string>
+    <string name="txtWelcome">Welcome</string>
+    <string name="txtDescription_welcome">
+        You are about to be part of the Spectro project, which is being updated with several new features whenever i can :) .
+        Our goal is to make an application with full compatibility with Iot development boards such as Arduino , ESP , Raspebarry Pi
+        among others. The app has a section devoted to the new features suggestions , feel free to give their suggestions and also
+        contact me on my social networks .. Good luck .</string>
+    <string name="btnOK">Got it</string>
+
+    <string name="menuProject">Projects</string>
+
+    <string name="menuTerminal">Terminal</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected with any device.</string>
+    <string name="bt_not_enabled_leaving">Bluetooth of, leaving terminal.</string>
+    <string name="title_connecting">Connected</string>
+    <string name="title_connected_to">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">No conection</string>
+    <string name="btnSend">Send</string>
+    <string name="btnConnect">Connect</string>
+
+    <string name="menuEditor">Notes</string>
+
+    <string name="menuContact">Contact</string>
+    <string name="txtContact">Contact</string>
+    <string name="txtDescription_contact">
+        To further customize your app just insert some your data? I will love to know
+        the profile of each user of the Spectro ,
+        so I can let it even better .
+        Do not forget to leave your suggestion huh ?!</string>
+    <string name="btnContact">Send</string>
+
+    <string name="menuSettings">Settings</string>
+
+    <string name="menuTutorial">Tutorial</string>
+    <string name="txtTutorial">Tutorial</string>
+    <string name="txtDescription_tutorial">
+        This is your ward tutorial , here is where you will learn to
+        manipulate this beautiful and awesome app .
+        So, what do you want to learn first? </string>
+    <string name="btnTutorial1"> Tutorial #1</string>
+    <string name="btnTutorial2">Tutorial 2#</string>
+    <string name="btnTutorial3">Tutorial 3#</string>
+
+    <string name="menuInfo">Info</string>
+    <string name="txtInfo">About us</string>
+    <string name="txtDescription_info">Look who created an application ?? Yes, I haha
+        the guy who never took a course on Java or anything else , but always loved
+        electronics and programming. Without further ado , pleasure, my name is Artur
+        and this is my app, for Maker by Maker :) </string>
+    <string name="txtVersion"> Version 1.0</string>
+    <string name="txtEspecialthks">Especial thanks</string>
+
+    <string name="menuSubtitle_social">Social Networks</string>
+
+    <string name="menuSubtitle_about">About us</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scaning</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No device has been paired</string>
+    <string name="none_found">No device found</string>
+    <string name="title_paired_devices">Paired devices</string>
+    <string name="title_other_devices">Other devices availables</string>
+    <string name="button_scan">Scan devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connection secure</string>
+    <string name="insecure_connect">Conection insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="developer_name">Artur Gomes</string>
+    <string name="developer_email">arturgomesomatos@gmail.com</string>
+    <string name="pref_uuid_title"></string>
+    <string name="pref_uuid_summary"></string>
+    <string name="pref_orientation_summary"></string>
+    <string name="pref_orientation_title"></string>
+    <string name="pref_text_buffer_title"></string>
+    <string name="pref_text_buffer_summary"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="no_notes_text">Press \'+\' to add a Note</string>
+    <string name="note_title">Title</string>
+    <string name="note_body">Note</string>
+    <!-- -->
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <!-- -->
+    <string-array name="colourNames">
+        <item>Blue</item>
+        <item>Teal</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>White</item>
+    </string-array>
+    <!-- -->
+    <string-array name="fontSizeNames">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <!-- Notes -->
+    <string name="action_search">Search</string>
+    <string name="action_rate_app">Rate us</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_delete_selected_number">Selecte</string>
+    <string name="action_font_size">Font size</string>
+    <!-- -->
+    <string name="dialog_delete">Selecte the notes that will be deleted</string>
+    <string name="dialog_save_changes">Save first ?</string>
+    <string name="dialog_font_size">Change font size</string>
+    <string name="dialog_rate_title">Rate app</string>
+    <string name="dialog_rate_message">Open app in Play Store? (Thank you a lot!)</string>
+    <!-- -->
+    <string name="new_note_content_description">New note</string>
+    <string name="favourite_content_description">Favourite</string>
+    <!-- -->
+    <string name="toast_deleted">Notes deleted</string>
+    <string name="toast_new_note">New note</string>
+    <string name="toast_note_saved">Note save</string>
+    <string name="toast_empty_note_discarded">Empty note discarded</string>
+    <string name="toast_edittext_cannot_be_empty">The Title can not  be </string>
+    <string name="toast_note_body_hidden">Note body will now be hidden in notes list</string>
+    <string name="toast_note_body_showing">Note body will now be shown in notes list</string>
+    <string name="toast_backup_failed">Backup unsuccessful</string>
+    <string name="toast_backup_no_notes">No notes to backup</string>
+    <string name="toast_restore_successful">Notes restored</string>
+    <string name="toast_restore_unsuccessful">Restore unsuccessful</string>
+
+    <!-- Projects -->
+
+    <string name="no_project_text">Pressione \'+\' para adicionar um Projeto</string>
+    <string name="project_title">Titulo</string>
+    <string name="project_body">Nota</string>
+    <string name="dialog_delete_project">Secione os projetos que serão deletadas</string>
+    <string name="toast_empty_project_discarded">Projeto vazio descartado</string>
+    <string name="toast_deleted_project">Projetos deletados</string>
+    <string name="toast_new_project">Projeto criado</string>
+    <string name="toast_project_saved">Projeto salvo</string>
+    <string name="new_project_content_description">Novo projeto</string>
+    <string name="favourite_content_description_project">Favorito</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Artur Gomes</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+</resources>
