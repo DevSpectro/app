@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_welcome"
+            android:icon="@drawable/home"
+            android:title="@string/menuWelcome" />
+        <item
+            android:id="@+id/nav_projetos"
+            android:icon="@drawable/plus"
+            android:title="@string/menuProject" />
+        <item
+            android:id="@+id/nav_terminal"
+            android:icon="@drawable/terminal"
+            android:title="@string/menuTerminal" />
+        <item
+            android:id="@+id/nav_note"
+            android:icon="@drawable/notes"
+            android:title="@string/menuEditor" />
+        <item
+            android:id="@+id/nav_dados"
+            android:icon="@drawable/edit"
+            android:title="@string/menuContact" />
+        <item
+            android:id="@+id/nav_config"
+            android:icon="@drawable/config"
+            android:title="@string/menuSettings" />
+
+        <item
+            android:id="@+id/nav_tutorial"
+            android:icon="@drawable/tutorial"
+            android:title="@string/menuTutorial" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_face"
+                android:icon="@drawable/face"
+                android:title="Facebook"
+                />
+            <item
+                android:id="@+id/nav_tt"
+                android:icon="@drawable/tt"
+                android:title="Twitter"
+                />
+            <item
+                android:id="@+id/nav_git"
+                android:icon="@drawable/git"
+                android:title="GitHub"
+                />
+        </menu>
+    </item>
+    <item android:title="Sobre nós">
+        <menu>
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/info"
+            android:title="@string/menuInfo"
+            />
+        </menu>
+    </item>
+
+</menu>

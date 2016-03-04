@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="#028fc9"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Criar Projeto"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            android:layout_weight="0.11" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="341dp"
+            android:layout_height="62dp"
+            android:weightSum="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Nome do Projeto"
+                android:id="@+id/textView7"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="#f0f0f0" />
+
+            <EditText
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtNomeProj"
+                android:textColor="#d6d7d7"
+                android:backgroundTint="#000f0c0c"
+                android:textStyle="bold|italic"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="341dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Qual sua placa?"
+                android:id="@+id/textView8"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="#f0f0f0"
+                android:layout_gravity="center" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnPlacas"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:touchscreenBlocksFocus="false"
+                android:layout_gravity="center"
+                android:background="#f5f5f5"
+                android:foregroundTint="#727272" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="341dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tipo de comunicação"
+                android:id="@+id/textView9"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="#f0f0f0"
+                android:layout_gravity="center" />
+
+            <Spinner
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnTipos"
+                android:textAlignment="center"
+                android:touchscreenBlocksFocus="false"
+                android:background="#f5f5f5"
+                android:layout_gravity="center"
+                android:popupTheme="@color/abc_primary_text_material_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal|bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:id="@+id/btnCancel"
+                android:background="#003a2d2d"
+                android:textColor="#ffffff"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:layout_weight="0.86" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08"></LinearLayout>
+
+            <Button
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:text="Criar"
+                android:id="@+id/btnCriar"
+                android:background="#f6ffffff"
+                android:textColor="#028fc9"
+                android:textStyle="bold|italic"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="0.12" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

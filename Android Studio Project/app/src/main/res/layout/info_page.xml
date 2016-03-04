@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="369dp"
+        android:layout_height="479dp"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLogo"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Spectro"
+            android:id="@+id/txtName"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold|italic"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtInfo"
+            android:id="@+id/txtAbout"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textStyle="normal|italic"
+            android:layout_weight="0.06" />
+
+        <TextView
+            android:layout_width="317dp"
+            android:layout_height="164dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/txtDescription_info"
+            android:id="@+id/txtDescription"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:gravity="bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtVersion"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold|italic"
+            android:gravity="bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtEspecialthks"
+            android:id="@+id/textView14"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="normal|italic"
+            android:layout_weight="0.43"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="https://github.com/googlesamples"
+            android:id="@+id/textView15"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:gravity="bottom" />
+
+    </LinearLayout>
+
+</FrameLayout>

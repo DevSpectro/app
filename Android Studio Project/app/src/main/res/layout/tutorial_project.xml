@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="369dp"
+        android:layout_height="479dp"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/welcome_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLogo"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtTutorial"
+            android:id="@+id/txtTutorial"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold|italic"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="317dp"
+            android:layout_height="111dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/txtDescription_tutorial"
+            android:id="@+id/txtDescription"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center_vertical|fill_horizontal">
+
+                <Button
+                    android:layout_width="104dp"
+                    android:layout_height="33dp"
+                    android:text="@string/btnTutorial1"
+                    android:id="@+id/btnTutorial"
+                    android:background="#028fc9"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center|left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="103dp"
+                    android:layout_height="33dp"
+                    android:text="@string/btnTutorial2"
+                    android:id="@+id/btnTutorial2"
+                    android:background="#028fc9"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center|right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:text="@string/btnTutorial3"
+                    android:id="@+id/btnTutorial3"
+                    android:background="#028fc9"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center|right" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

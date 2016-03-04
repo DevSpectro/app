@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_terminal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="521dp"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Configurações"
+            android:id="@+id/txtConfig"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_weight="0.04"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Escolha qual o projeto será mostrado na tela principal:"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            android:id="@+id/txtConfig1"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnMainpag"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Seu nome:"
+            android:id="@+id/textView11"
+            android:textStyle="bold|italic"
+            android:layout_weight="0.02"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/user_name"
+                android:ems="10"
+                android:id="@+id/edtNome"
+                android:textAlignment="center"
+                android:singleLine="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="OK"
+                android:id="@+id/btnName"
+                android:background="#028fc9"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Seu Email:"
+            android:id="@+id/textView12"
+            android:textStyle="bold|italic"
+            android:layout_weight="0.07"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/edtEmail"
+                android:textAlignment="center"
+                android:text="@string/user_email" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="OK"
+                android:id="@+id/btnEmail"
+                android:background="#028fc9"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

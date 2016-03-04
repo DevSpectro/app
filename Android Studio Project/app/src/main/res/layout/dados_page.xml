@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="371dp"
+        android:layout_height="444dp"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/txtContact"
+                android:id="@+id/textView2"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:gravity="bottom" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="91dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/txtDescription_contact"
+            android:id="@+id/txtDescription2"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_weight="0.39"
+            android:gravity="bottom|top" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:weightSum="1"
+            android:layout_weight="0.53">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnContact"
+                android:id="@+id/btnEnviar"
+                android:layout_gravity="center_horizontal"
+                android:background="#028fc9"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

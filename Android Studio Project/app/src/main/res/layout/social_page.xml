@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Redes Sociais"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="102dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Aqui estao todas minhas redes socias, sinta-se livre pra entrar em contato sempre que achar necessario."
+            android:id="@+id/textView3"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:layout_weight="0.36" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/btnFace"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold|italic"
+            android:background="#028fc9"
+            android:textColor="#ffffff"
+            android:onClick="btnFace"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Github"
+                android:id="@+id/btnGit"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold|italic"
+                android:background="#028fc9"
+                android:textColor="#ffffff"
+                android:onClick="btnGit"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:id="@+id/btnTt"
+            android:textStyle="bold|italic"
+            android:background="#028fc9"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:onClick="btnTt"/>
+    </LinearLayout>
+
+</FrameLayout>
