@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@mipmap/bg"
+    android:background="@color/bg_register"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -23,7 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:src="@mipmap/logowhite" />
+            android:src="@mipmap/logowhite"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.33" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,16 +35,17 @@
             android:id="@+id/txtMyname"
             android:textStyle="bold|italic"
             android:textSize="15dp"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
             android:textAlignment="center"
             android:name="@string/developer_name"
-            android:text="@string/pref_default_display_name" />
+            android:text="Spectro" />
 
         <TextView
             android:id="@+id/txtUserEmail"
-            android:layout_width="216dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/user_email" />
+            android:layout_gravity="center_horizontal"
+            android:text="devspectro@gmail.com" />
 
     </LinearLayout>
 
