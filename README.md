@@ -1,8 +1,6 @@
 # Spectro app
 
-------
 Best way to communicate arduino with android licensed under the GPLv3 license.
-------
 
 ###Images
 ![](http://i63.tinypic.com/2n7e5pi.png)![](http://i65.tinypic.com/2a9crp5.png)![](http://i66.tinypic.com/2czqxq9.png)![](http://i64.tinypic.com/xnesko.png)![](http://i64.tinypic.com/2vjubzc.png)![](http://i66.tinypic.com/2uzs2vr.png)![]
