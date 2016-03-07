@@ -7,6 +7,10 @@
             android:icon="@drawable/home"
             android:title="@string/menuWelcome" />
         <item
+            android:id="@+id/nav_watch"
+            android:icon="@drawable/watch"
+            android:title="@string/menuWatch" />
+        <item
             android:id="@+id/nav_projetos"
             android:icon="@drawable/plus"
             android:title="@string/menuProject" />
@@ -36,14 +40,9 @@
     <item android:title="Social">
         <menu>
             <item
-                android:id="@+id/nav_face"
-                android:icon="@drawable/face"
-                android:title="Facebook"
-                />
-            <item
-                android:id="@+id/nav_tt"
-                android:icon="@drawable/tt"
-                android:title="Twitter"
+                android:id="@+id/nav_up"
+                android:icon="@drawable/up"
+                android:title="University"
                 />
             <item
                 android:id="@+id/nav_git"
@@ -52,13 +51,22 @@
                 />
         </menu>
     </item>
-    <item android:title="Sobre nós">
+    <item android:title="About us">
         <menu>
         <item
             android:id="@+id/nav_info"
             android:icon="@drawable/info"
             android:title="@string/menuInfo"
             />
+        </menu>
+    </item>
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_logoff"
+                android:icon="@drawable/logout"
+                android:title="@string/logout"
+                />
         </menu>
     </item>
 
