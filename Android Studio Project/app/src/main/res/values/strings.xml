@@ -11,8 +11,7 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
-    <!-- Basics -->
+--><!-- Basics -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Spectro</string>
     <string name="user_name">Artur Gomes</string>
@@ -26,7 +25,7 @@
         among others. The app has a section devoted to the new features suggestions , feel free to give their suggestions and also
         contact me on my social networks .. Good luck .</string>
     <string name="btnOK">Got it</string>
-
+    <string name="menuWatch">Spectro Watch</string>
     <string name="menuProject">Projects</string>
 
     <string name="menuTerminal">Terminal</string>
@@ -156,16 +155,16 @@
 
     <!-- Projects -->
 
-    <string name="no_project_text">Pressione \'+\' para adicionar um Projeto</string>
+    <string name="no_project_text">Press \'+\' to add a Project</string>
     <string name="project_title">Titulo</string>
     <string name="project_body">Nota</string>
-    <string name="dialog_delete_project">Secione os projetos que serão deletadas</string>
-    <string name="toast_empty_project_discarded">Projeto vazio descartado</string>
-    <string name="toast_deleted_project">Projetos deletados</string>
-    <string name="toast_new_project">Projeto criado</string>
-    <string name="toast_project_saved">Projeto salvo</string>
-    <string name="new_project_content_description">Novo projeto</string>
-    <string name="favourite_content_description_project">Favorito</string>
+    <string name="dialog_delete_project">Selecte the projects that will be deleted</string>
+    <string name="toast_empty_project_discarded">Empty prdoject discarte</string>
+    <string name="toast_deleted_project">Deleted Project</string>
+    <string name="toast_new_project">New Project</string>
+    <string name="toast_project_saved">Project saved</string>
+    <string name="new_project_content_description">New project</string>
+    <string name="favourite_content_description_project">Favourite</string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
@@ -225,5 +224,282 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="action_note_colour">Note Colour</string>
+
+    <string name="dialog_note_colour">Change note colour</string>
+
+    <string name="dialog_check_backup_if_sure">Are you sure you want to backup current notes?</string>
+    <string name="dialog_backup_created_title">Backup successful</string>
+    <string name="dialog_backup_created">Backup created in</string>
+    <string name="dialog_check_restore_if_sure">Are you sure you want to restore backup notes?
+        (Cannot be undone)</string>
+    <string name="dialog_restore_failed_title">No backup found</string>
+    <string name="dialog_restore_failed">To restore notes, the backup file
+        has to be in \'External/Swiftnotes/swiftnotes_backup.json\'</string>
+    <string name="action_backup">Backup notas</string>
+    <string name="action_restore">Restore notas</string>
+
+    <string name="action_hide_body">Hide note body in list</string>
+    <string name="action_show_body">Show note body in list</string>
+    <string name="title_activity_login_spectro">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <!-- Watch -->
+
+    <!-- Global app strings -->
+    <string name="service_name">Retro Watch Service</string>
+    <string name="web_view_name">RSS Browser</string>
+    <string name="noti_receiver_name">RetroWatch noti receiver</string>
+
+    <!-- Settings -->
+    <string name="action_settings">App Settings</string>
+
+    <!-- UI, Activity, Fragment -->
+    <string name="title_messagelist">Message List</string>
+    <string name="title_filters">Filters</string>
+    <string name="title_rss">RSS</string>
+    <string name="title_watchcontrol">Watch Control</string>
+
+    <!-- Contents -->
+    <string name="content_notification">Notification</string>
+    <string name="content_gmail_unread_count">Gmail unread count</string>
+    <string name="content_undefined">Undefined</string>
+
+    <string name="content_icon">Icon</string>
+
+    <!--  Bluetooth -->
+    <string name="bt_title">Bluetooth</string>
+
+    <string name="bt_state_init">initializing</string>
+    <string name="bt_state_wait">waiting.. (select a device manually)</string>
+    <string name="bt_state_connect">connecting</string>
+    <string name="bt_state_connected">connected</string>
+    <string name="bt_state_error">error</string>
+
+
+    <string name="bt_cmd_sending_error">Transaction failed</string>
+
+    <!--  DeviceListActivity -->
+
+
+    <!-- Options Menu -->
+    <string name="connect">Connect\na device</string>
+    <string name="noti_settings">Notification\nsetting</string>
+    <string name="refresh_contents">Refresh\ncontents</string>
+    <string name="send_contents">Send data\nto watch</string>
+
+
+    <!-- Command -->
+    <string name="command_new">New</string>
+    <string name="command_add">Add</string>
+    <string name="command_edit">Edit</string>
+    <string name="command_delete">Delete</string>
+
+    <!-- Warning message -->
+    <string name="warning_select_type">Select filtering object type</string>
+    <string name="warning_select_compare_type">Select comparing method</string>
+    <string name="warning_select_replace_type">Select replace method</string>
+    <string name="warning_type_target">Type comparing string</string>
+    <string name="warning_type_rss_field">Type URL, Title string</string>
+
+    <!-- RSS strings -->
+    <string name="rss_title">Type RSS title</string>
+    <string name="rss_url">Type URL here.</string>
+    <string name="rss_type_here">Type RSS info below</string>
+    <string name="rss_find_more">RSS Browser</string>
+
+    <!-- Settings string -->
+    <string name="email_field_title">Type your Gmail address</string>
+    <string name="email_addr_hint">aaa@gmail.com</string>
+    <string name="settings_background_service">Run in background</string>
+    <string name="clock_style_title">Watch clock style</string>
+    <string-array name="clock_style_array">
+        <item>Select style</item>
+        <item>Simple ANALOG</item>
+        <item>Simple DIGITAL</item>
+        <item>Simple MIX</item>
+        <item>User defined</item>
+    </string-array>
+    <string name="clock_indicator_title">Show indicator?</string>
+    <string-array name="clock_indicator_array">
+        <item>Select option</item>
+        <item>Visibile</item>
+        <item>Invisible</item>
+    </string-array>
+    <string name="update_time_title">Set contents update interval</string>
+    <string name="noti_set_gmail_addr">Set your Gmail address at WATCH CONTROL tab.</string>
+
+    <!-- Filter strings -->
+    <string name="filter_object_type">Object type</string>
+    <string name="filter_compare_type">Compare type</string>
+    <string name="filter_replace_type">Replace type</string>
+    <string name="filter_origin">Original string</string>
+    <string name="filter_replace">Replace string (leave blank to erase)</string>
+    <string name="filter_icon">Icon type</string>
+    <string name="filter_package_name">Package name</string>
+    <string name="filter_sendmsg">Send message with </string>
+
+    <string name="filter_field_converted">convert to:</string>
+    <string name="filter_text_blank">[blank]</string>
+
+    <string-array name="filter_type_array">
+        <item>Object type</item>
+        <item>All type</item>
+        <item>Notification</item>
+        <item>Messaging</item>
+        <item>Feed</item>
+        <item>Emergency</item>
+        <item>Package name</item>
+    </string-array>
+
+    <string-array name="filter_matching_type_array">
+        <item>Compare method</item>
+        <item>Equals</item>
+        <item>Start with</item>
+        <item>End with</item>
+        <item>Contains</item>
+    </string-array>
+
+    <string-array name="filter_replace_type_array">
+        <item>Replace method</item>
+        <item>Replace all</item>
+        <item>Replace same part only</item>
+    </string-array>
+
+    <string-array name="filter_icon_type_array">
+        <item>No icon</item>
+        <item>Android</item>
+        <item>ankor</item>
+        <item>apple</item>
+        <item>barcode</item>
+        <item>battery full</item>
+        <item>battery med</item>
+        <item>battery low</item>
+        <item>battery empty</item>
+        <item>bookmark</item>
+        <item>calendar</item>
+        <item>call</item>
+        <item>camera</item>
+        <item>cancel</item>
+        <item>character skull</item>
+        <item>character1</item>
+        <item>character2</item>
+        <item>character3</item>
+        <item>character4</item>
+        <item>chart</item>
+        <item>chat</item>
+        <item>chrome</item>
+        <item>clip</item>
+        <item>clock</item>
+        <item>copy</item>
+        <item>denied</item>
+        <item>document</item>
+        <item>download</item>
+        <item>earth</item>
+        <item>email</item>
+        <item>folder</item>
+        <item>home</item>
+        <item>kittcharacter</item>
+        <item>list</item>
+        <item>movie</item>
+        <item>music</item>
+        <item>navigator</item>
+        <item>pen</item>
+        <item>person</item>
+        <item>picture</item>
+        <item>pill</item>
+        <item>power logo</item>
+        <item>plugged</item>
+        <item>unplugged</item>
+        <item>print</item>
+        <item>umbrella</item>
+        <item>refresh</item>
+        <item>RSS</item>
+        <item>save</item>
+        <item>lock</item>
+        <item>unlock</item>
+        <item>settings</item>
+        <item>smile</item>
+        <item>facebook</item>
+        <item>twitter</item>
+        <item>tag</item>
+        <item>trade</item>
+        <item>trash</item>
+        <item>unknown</item>
+        <item>USIM</item>
+        <item>wait</item>
+        <item>warning</item>
+        <item>wifi</item>
+        <item>windows</item>
+        <item>cloud</item>
+        <item>antenna</item>
+    </string-array>
+
+    <!-- WebView -->
+    <string name="warning_loading_wait">Loading...</string>
+    <string name="msg_rss_update_success">RSS registered</string>
+    <string name="warning_error_while_adding_rss">Error! Cannot register!</string>
+    <string name="button_go">Go</string>
+
+    <!-- Dialog -->
+    <string name="enable_message">Enable selected message only</string>
+    <string name="enable_package">Enable this app\'s message all</string>
+    <string name="disable_package">Disable this app\'s message</string>
+    <string name="close">Close</string>
+    <string name="text_enabled">Selected message is enabled already. If you want to disable this message, move to Filter tab and delete filter.</string>
+
+    <!-- Etc -->
+    <string-array name="message_type_array">
+        <item>UNDEFINED</item>
+        <item>NOTIFICATION</item>
+        <item>MESSAGING</item>
+        <item>EMERGENCY</item>
+        <item>FEED</item>
+        <!--  Disabled:
+        <item>SMS RECEIVED</item>
+         -->
+    </string-array>
+
+    <string-array name="call_type_array">
+        <item>Call state idle</item>
+        <item>Call received</item>
+    </string-array>
+
+    <string-array name="rf_type_array">
+        <item>In service</item>
+        <item>Out of service</item>
+        <item>Emergency only</item>
+        <item>Power off</item>
+    </string-array>
+
+    <string name="batt_type_string">Battery: </string>
+    <string name="title_activity_my_projects_main">MyProjectsMain</string>
+    <string name="title_activity_login">Login in</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Username</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="no_login">Don\'t have a login ? Email me.</string>
+    <string name="logout">Logout</string>
 
 </resources>
