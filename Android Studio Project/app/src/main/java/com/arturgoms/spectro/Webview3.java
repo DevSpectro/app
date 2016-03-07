@@ -27,7 +27,7 @@ public class Webview3 extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
 
         // Use remote resource
-        mWebView.loadUrl("https://www.facebook.com/TheFUnkyFlash");
+        mWebView.loadUrl("http://www.up.edu.br/");
 
         // Stop local links and redirects from opening in browser instead of WebView
         mWebView.setWebViewClient(new MyAppWebViewClient());

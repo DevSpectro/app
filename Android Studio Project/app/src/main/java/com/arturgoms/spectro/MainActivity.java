@@ -6,11 +6,9 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -19,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -26,6 +25,9 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.arturgoms.spectro.bluetoothchat.BluetoothChatBar;
+import com.arturgoms.spectro.login.activity.RegisterActivity;
+import com.arturgoms.spectro.login.helper.SQLiteHandler;
+import com.arturgoms.spectro.login.helper.SessionManager;
 import com.arturgoms.spectro.project.ActivityProjectEdit;
 import com.arturgoms.spectro.project.MainProject;
 
@@ -33,7 +35,6 @@ import java.util.UUID;
 
 import Fragments.DadosPage;
 import Fragments.InfoPage;
-import Fragments.ProjectPage;
 import Fragments.WelcomePage;
 
 import static com.arturgoms.spectro.project.DataUtilsProject.NEW_PROJECT_REQUEST;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity
     private static final int REQUEST_BLU = 1;
     private Button btnEntendi;
     private TextView txtMyname;
+    private TextView txtUserEmail;
     public static final String TAG = "MainActivity";
 
     // Whether the Log Fragment is currently shown
@@ -76,7 +78,8 @@ public class MainActivity extends AppCompatActivity
     //Bluetooth code
 
 
-
+    private SessionManager session;
+    private SQLiteHandler db;
     private static final String SAVED_PENDING_REQUEST_ENABLE_BT = "PENDING_REQUEST_ENABLE_BT";
     // do not resend request to enable Bluetooth
     // if there is a request already in progress
@@ -89,12 +92,16 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        String username = getIntent().getStringExtra("Username");
         btnEntendi = (Button) findViewById(R.id.btnEntendi);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
+        session = new SessionManager(getApplicationContext());
 
+        if (!session.isLoggedIn()) {
+            logoutUser();
+        }
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,6 +144,7 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fm = getFragmentManager();
         fm.beginTransaction().replace(R.id.content_page, new WelcomePage()).commit();
 
+
         getSupportActionBar().setHomeButtonEnabled(false);
 
         if (savedInstanceState != null) {
@@ -148,12 +156,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-// ======================================== BLUETOOTH TERMINAL CODE =========================
-
-
-//=============================================== END OF BLUETOOTH CODE ======================
-
-    //=============================================== MENU ======================
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -190,6 +192,9 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, MainProject.class);
             startActivity(intent);
 
+        } else if (id == R.id.nav_watch) {
+
+
         } else if (id == R.id.nav_dados) {
             fm.beginTransaction().replace(R.id.content_page, new DadosPage()).commit();
 
@@ -211,14 +216,9 @@ public class MainActivity extends AppCompatActivity
             fm.beginTransaction().replace(R.id.content_page, new TutorialPage()).commit();
         }
 
-        else if (id == R.id.nav_face){
+        else if (id == R.id.nav_up){
 
             Intent intent = new Intent(MainActivity.this, Webview3.class);
-            startActivity(intent);
-        }
-        else if (id == R.id.nav_tt){
-
-            Intent intent = new Intent(MainActivity.this, Webview2.class);
             startActivity(intent);
         }
         else if (id == R.id.nav_git){
@@ -228,6 +228,10 @@ public class MainActivity extends AppCompatActivity
         else if (id == R.id.nav_info){
             fm.beginTransaction().replace(R.id.content_page, new InfoPage()).commit();
         }
+        else if (id == R.id.nav_logoff){
+            logoutUser();
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -252,8 +256,13 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    // BLUETOOTH SERIAL CODE
+    private void logoutUser() {
+        session.setLogin(false);
 
+        Intent intent = new Intent(com.arturgoms.spectro.MainActivity.this, RegisterActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
 }
